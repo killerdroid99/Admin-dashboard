@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.sidebar {
+	padding: min(2vh);
+	border: 1px solid black;
+	grid-row-start: 1;
+	grid-row-end: -1;
+}
+.logo {
+	height: 60px;
+	width: 60px;
+	filter: drop-shadow(0px 0px 2px #000);
+}
+
+.sidebar span {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: min(3rem) 0px;
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.list li {
+	display: flex;
+	align-items: center;
+	gap: 2ch;
+	font-size: 25px;
+}
+
+.main {
+	margin: min(3rem) 0px;
+}
+
+.header {
+	border: 1px solid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: -1;
+	padding: min(25px);
+}
+
+.upper-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 2rem;
+	margin-right: 5rem;
+}
+
+.search {
+	display: inline-flex;
+	align-items: center;
+}
+
+.search input {
+	height: 2.3rem;
+	width: max(30vw);
+	margin-right: 1rem;
+	border-radius: 10px;
+	border: 3px solid black;
+	font-size: 2ch;
+}
+
+.search img {
+	height: 30px;
+	width: 30px;
+}
+
+.profile-img {
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+}
+
+.profile-icons {
+	display: inline-flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.lower-section {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-right: 5rem;
+	margin-left: 2rem;
+	justify-content: space-between;
+}
+
+.lower-section > div {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.big {
+	height: 60px;
+	width: 60px;
+}
+
+.profile-name {
+	margin-left: 20px;
+}
+
+.buttons-array {
+	display: flex;
+	gap: 20px;
+}
+
+.btns {
+	height: 40px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: turquoise;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.main-content {
+	border: 1px solid;
+	grid-row-start: 2;
+	grid-row-end: -1;
+	grid-column-start: 2;
+	grid-column-end: -1;
+}
